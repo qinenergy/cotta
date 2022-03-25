@@ -23,13 +23,13 @@ bash run_cifar10.sh
 bash run_cifar10_gradual.sh
 ```
 ### CIFAR100-to-CIFAR100C task
-```
+```bash
 # Tested on RTX3090
 bash run_cifar100.sh
 ```
 
 ### ImageNet-to-ImageNetC task 
-```
+```bash
 # Tested on RTX3090
 cd imagenet
 bash run.sh
