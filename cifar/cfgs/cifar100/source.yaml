@@ -1,0 +1,25 @@
+MODEL:
+  ADAPTATION: source
+  ARCH: Hendrycks2020AugMix_ResNeXt
+TEST:
+  BATCH_SIZE: 200
+CORRUPTION:
+  DATASET: cifar100
+  SEVERITY:
+    - 5
+  TYPE:
+    - gaussian_noise
+    - shot_noise
+    - impulse_noise
+    - defocus_blur
+    - glass_blur
+    - motion_blur
+    - zoom_blur
+    - snow
+    - frost
+    - fog
+    - brightness
+    - contrast
+    - elastic_transform
+    - pixelate
+    - jpeg_compression

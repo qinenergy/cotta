@@ -1,0 +1,34 @@
+CORRUPTION:
+  DATASET: cifar10
+  SEVERITY:
+  - 5
+  TYPE:
+  - shot_noise
+  - fog
+  - glass_blur
+  - pixelate
+  - snow
+  - elastic_transform
+  - brightness
+  - impulse_noise
+  - defocus_blur
+  - frost
+  - contrast
+  - gaussian_noise
+  - motion_blur
+  - jpeg_compression
+  - zoom_blur
+MODEL:
+  ADAPTATION: cotta
+  ARCH: Standard
+OPTIM:
+  BETA: 0.9
+  LR: 1e-3
+  METHOD: Adam
+  STEPS: 1
+  WD: 0.0
+  MT: 0.999
+  RST: 0.01
+  AP: 0.92
+TEST:
+  BATCH_SIZE: 200

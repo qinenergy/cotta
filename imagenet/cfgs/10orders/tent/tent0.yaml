@@ -1,0 +1,31 @@
+CORRUPTION:
+  DATASET: imagenet
+  SEVERITY:
+  - 5
+  TYPE:
+  - brightness
+  - pixelate
+  - gaussian_noise
+  - motion_blur
+  - zoom_blur
+  - glass_blur
+  - impulse_noise
+  - jpeg_compression
+  - defocus_blur
+  - elastic_transform
+  - shot_noise
+  - frost
+  - snow
+  - fog
+  - contrast
+MODEL:
+  ADAPTATION: tent
+  ARCH: Standard_R50
+OPTIM:
+  BETA: 0.9
+  LR: 0.00025
+  METHOD: SGD
+  STEPS: 1
+  WD: 0.0
+TEST:
+  BATCH_SIZE: 64

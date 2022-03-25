@@ -1,0 +1,31 @@
+CORRUPTION:
+  DATASET: cifar10
+  SEVERITY:
+  - 5
+  TYPE:
+  - motion_blur
+  - snow
+  - fog
+  - shot_noise
+  - defocus_blur
+  - contrast
+  - zoom_blur
+  - brightness
+  - frost
+  - elastic_transform
+  - glass_blur
+  - gaussian_noise
+  - pixelate
+  - jpeg_compression
+  - impulse_noise
+MODEL:
+  ADAPTATION: tent
+  ARCH: Standard
+OPTIM:
+  BETA: 0.9
+  LR: 1e-3
+  METHOD: Adam
+  STEPS: 1
+  WD: 0.0
+TEST:
+  BATCH_SIZE: 200

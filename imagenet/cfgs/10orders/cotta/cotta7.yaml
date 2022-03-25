@@ -1,0 +1,31 @@
+CORRUPTION:
+  DATASET: imagenet
+  SEVERITY:
+  - 5
+  TYPE:
+  - glass_blur
+  - zoom_blur
+  - impulse_noise
+  - fog
+  - snow
+  - jpeg_compression
+  - gaussian_noise
+  - frost
+  - shot_noise
+  - brightness
+  - contrast
+  - motion_blur
+  - pixelate
+  - defocus_blur
+  - elastic_transform
+MODEL:
+  ADAPTATION: cotta
+  ARCH: Standard_R50
+OPTIM:
+  BETA: 0.9
+  LR: 0.01
+  METHOD: SGD
+  STEPS: 1
+  WD: 0.0
+TEST:
+  BATCH_SIZE: 64
