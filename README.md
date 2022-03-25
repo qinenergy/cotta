@@ -1,5 +1,5 @@
 # CoTTA
-Code for our paper [Continual Test-Time Domain Adaptation CVPR22](http://arxiv.org/abs/) 
+Code for our CVPR 2022 paper [Continual Test-Time Domain Adaptation](http://arxiv.org/abs/) 
 
 ## Prerequisite
 Please create and activate the following conda envrionment. To reproduce our results, please kindly create and use this environment.
@@ -11,17 +11,25 @@ conda activate cotta
 ```
 
 ## Experiment 
+### CIFAR10-to-CIFAR10C-standard task
 ```bash
-# CIFAR10-to-CIFAR10C-standard task
 # Tested on RTX2080TI
 cd cifar
 bash run_cifar10.sh 
-# CIFAR10-to-CIFAR10C-gradual task
+```
+### CIFAR10-to-CIFAR10C-gradual task
+```bash
+# Tested on RTX2080TI
 bash run_cifar10_gradual.sh
-# CIFAR100-to-CIFAR100C task
+```
+### CIFAR100-to-CIFAR100C task
+```
 # Tested on RTX3090
 bash run_cifar100.sh
-# ImageNet-to-ImageNetC task 
+```
+
+### ImageNet-to-ImageNetC task 
+```
 # Tested on RTX3090
 cd imagenet
 bash run.sh
@@ -40,7 +48,7 @@ Please cite our work if you find it useful.
 
 ## Acknowledgement 
 + TENT code is heavily used. [official](https://github.com/DequanWang/tent) 
-+ KATANA code is used for augmentation. [Official](https://github.com/giladcohen/KATANA) 
++ KATANA code is used for augmentation. [official](https://github.com/giladcohen/KATANA) 
 
 ## Data links
 + ImageNet-C [Download](https://zenodo.org/record/2235448#.Yj2RO_co_mF)
