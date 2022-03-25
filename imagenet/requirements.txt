@@ -1,3 +1,0 @@
-yacs==0.1.8
-iopath==0.1.8
-git+https://github.com/robustbench/robustbench@v0.1#egg=robustbench
