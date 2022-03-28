@@ -1,5 +1,5 @@
 # CoTTA
-Code for our CVPR 2022 paper [Continual Test-Time Domain Adaptation](http://arxiv.org/abs/) 
+Code for our CVPR 2022 paper [Continual Test-Time Domain Adaptation](https://arxiv.org/abs/2203.13591) 
 
 ## Prerequisite
 Please create and activate the following conda envrionment. To reproduce our results, please kindly create and use this environment.
