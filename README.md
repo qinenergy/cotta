@@ -53,6 +53,6 @@ Please cite our work if you find it useful.
 
 ## Data links
 + ImageNet-C [Download](https://zenodo.org/record/2235448#.Yj2RO_co_mF)
-+ [Supplementary](https://drive.qin.ee/cv/cvpr2022/)
++ [Supplementary](https://drive.qin.ee/api/raw/?path=/cv/cvpr2022/03679-supp-1.pdf)
 
 For questions regarding the code, please contact wang@qin.ee .
