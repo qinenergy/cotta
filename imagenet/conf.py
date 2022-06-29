@@ -51,8 +51,10 @@ _C.CORRUPTION.TYPE = ['gaussian_noise', 'shot_noise', 'impulse_noise',
                       'elastic_transform', 'pixelate', 'jpeg_compression']
 _C.CORRUPTION.SEVERITY = [5, 4, 3, 2, 1]
 
-# Number of examples to evaluate (10000 for all samples in CIFAR-10)
-_C.CORRUPTION.NUM_EX = 50000
+# Number of examples to evaluate 
+# The 5000 val images defined by Robustbench were actually used:
+# Please see https://github.com/RobustBench/robustbench/blob/7af0e34c6b383cd73ea7a1bbced358d7ce6ad22f/robustbench/data/imagenet_test_image_ids.txt
+_C.CORRUPTION.NUM_EX = 5000
 
 # ------------------------------- Batch norm options ------------------------ #
 _C.BN = CfgNode()
