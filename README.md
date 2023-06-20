@@ -1,4 +1,4 @@
-# CoTTA
+# CoTTA: Cotinual Test-Time Adaptation
 Code for our CVPR 2022 paper [Continual Test-Time Domain Adaptation](https://arxiv.org/abs/2203.13591) 
 
 ## Prerequisite
