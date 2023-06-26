@@ -1,8 +1,14 @@
 # CoTTA: Cotinual Test-Time Adaptation
 Code for continual test-time adaptation methods for classification and segmentation
-+ our CVPR 2022 paper CoTTA [Continual Test-Time Domain Adaptation](https://arxiv.org/abs/2203.13591) 
+We provide benchmarking and comparison for the following methods:
++ [CoTTA, Continual Test-Time Domain Adaptation](https://arxiv.org/abs/2203.13591) (our CVPR 2022 paper)
 + [AdaBN / BN Adapt](https://www.sciencedirect.com/science/article/abs/pii/S003132031830092X)
 + [TENT](https://arxiv.org/abs/2006.10726)
+  
+on the following tasks
++ CIFAR10/100 -> CIFAR10C/100C (standard/gradual)
++ ImageNet -> ImageNetC
++ Cityscapes -> ACDC 
 
 ## Prerequisite
 Please create and activate the following conda envrionment. To reproduce our results, please kindly create and use this environment.
@@ -42,7 +48,8 @@ bash run.sh
 Since April 2022, we also offer the segmentation code based on Segformer.
 You can download it [here](https://github.com/qinenergy/cotta/issues/6)
 ```
-## environment setup
+## environment setup: a new conda environment is needed for segformer
+## You may also want to check https://github.com/qinenergy/cotta/issues/13 if you have problem installing mmcv
 conda env create -f environment_segformer.yml
 pip install -e . --user
 conda activate segformer
