@@ -1,5 +1,8 @@
 # CoTTA: Cotinual Test-Time Adaptation
-Code for our CVPR 2022 paper [Continual Test-Time Domain Adaptation](https://arxiv.org/abs/2203.13591) 
+Code for continual test-time adaptation methods for classification and segmentation
++ our CVPR 2022 paper [Continual Test-Time Domain Adaptation](https://arxiv.org/abs/2203.13591) 
++ [AdaBN / BN Adapt](https://www.sciencedirect.com/science/article/abs/pii/S003132031830092X)
++ [TENT](https://arxiv.org/abs/2006.10726)
 
 ## Prerequisite
 Please create and activate the following conda envrionment. To reproduce our results, please kindly create and use this environment.
@@ -33,6 +36,23 @@ bash run_cifar100.sh
 # Tested on RTX3090
 cd imagenet
 bash run.sh
+```
+
+### Cityscapes-to-ACDC segmentation task
+Since April 2022, we also offer the segmentation code based on Segformer.
+You can download it [here](https://github.com/qinenergy/cotta/issues/6)
+```
+## environment setup
+conda env create -f environment_segformer.yml
+pip install -e . --user
+conda activate segformer
+## Run
+bash run_base.sh
+bash run_tent.sh
+bash run_cotta.sh
+# Example rerun logs are included in ./example_logs/base.log, tent.log, and cotta.log.
+## License for Cityscapses-to-ACDC code
+Non-commercial. Code is heavily based on Segformer. Please also check Segformer's LICENSE.
 ```
 
 ## Citation
