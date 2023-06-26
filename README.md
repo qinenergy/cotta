@@ -19,7 +19,7 @@ conda env create -f environment.yml
 conda activate cotta 
 ```
 
-## Experiment 
+## Classification Experiments
 ### CIFAR10-to-CIFAR10C-standard task
 ```bash
 # Tested on RTX2080TI
@@ -44,6 +44,7 @@ cd imagenet
 bash run.sh
 ```
 
+## Segmentation Experiments
 ### Cityscapes-to-ACDC segmentation task
 Since April 2022, we also offer the segmentation code based on Segformer.
 You can download it [here](https://github.com/qinenergy/cotta/issues/6)
