@@ -24,7 +24,7 @@ conda activate cotta
 ```bash
 # Tested on RTX2080TI
 cd cifar
-# This includes the comparison of all three methods
+# This includes the comparison of all three methods as well as baseline
 bash run_cifar10.sh 
 ```
 ### CIFAR10-to-CIFAR10C-gradual task
