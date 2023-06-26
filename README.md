@@ -2,8 +2,8 @@
 Code for continual test-time adaptation methods for classification and segmentation.
 We provide benchmarking and comparison for the following methods:
 + [CoTTA, Continual Test-Time Domain Adaptation](https://arxiv.org/abs/2203.13591) (our CVPR 2022 work)
-+ [AdaBN / BN Adapt](https://www.sciencedirect.com/science/article/abs/pii/S003132031830092X)
-+ [TENT](https://arxiv.org/abs/2006.10726)
++ AdaBN / BN Adapt
++ TENT
   
 on the following tasks
 + CIFAR10/100 -> CIFAR10C/100C (standard/gradual)
