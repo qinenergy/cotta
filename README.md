@@ -59,7 +59,7 @@ conda activate segformer
 bash run_base.sh
 bash run_tent.sh
 bash run_cotta.sh
-# Example rerun logs are included in ./example_logs/base.log, tent.log, and cotta.log.
+# Example logs are included in ./example_logs/base.log, tent.log, and cotta.log.
 ## License for Cityscapses-to-ACDC code
 Non-commercial. Code is heavily based on Segformer. Please also check Segformer's LICENSE.
 ```
