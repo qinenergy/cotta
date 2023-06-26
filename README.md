@@ -8,7 +8,7 @@ We provide benchmarking and comparison for the following methods:
 on the following tasks
 + CIFAR10/100 -> CIFAR10C/100C (standard/gradual)
 + ImageNet -> ImageNetC
-+ Cityscapes -> ACDC 
++ Cityscapes -> ACDC (segmentation)
 
 ## Prerequisite
 Please create and activate the following conda envrionment. To reproduce our results, please kindly create and use this environment.
