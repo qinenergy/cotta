@@ -1,5 +1,5 @@
 # CoTTA: Cotinual Test-Time Adaptation
-Official code for CoTTA, Continual Test-Time Domain Adaptation](https://arxiv.org/abs/2203.13591), published in CVPR 2022.
+Official code for [Continual Test-Time Domain Adaptation](https://arxiv.org/abs/2203.13591), published in CVPR 2022.
 
 This repository also includes other continual test-time adaptation methods for classification and segmentation.
 We provide benchmarking and comparison for the following methods:
