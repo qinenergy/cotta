@@ -66,6 +66,11 @@ bash run_cotta.sh
 Non-commercial. Code is heavily based on Segformer. Please also check Segformer's LICENSE.
 ```
 
+## Data links
++ [Supplementary PDF](https://1drv.ms/b/s!At2KHTLZCWRegpAOqP-8BCBQze68wg?e=wiyaAl)
++ [ACDC experiment code](https://1drv.ms/u/s!At2KHTLZCWRegpAcvrh9SA34gMpzNQ?e=TSiKs6)
++ [Other Supplementary](https://1drv.ms/f/s!At2KHTLZCWRegpAKdcRuOGE1S9ZGLg?e=iJcR9L)
+  
 ## Citation
 Please cite our work if you find it useful.
 ```bibtex
@@ -82,8 +87,8 @@ Please cite our work if you find it useful.
 + KATANA code is used for augmentation. [official](https://github.com/giladcohen/KATANA) 
 + Robustbench [official](https://github.com/RobustBench/robustbench) 
 
-## Data links
+
+## External data link
 + ImageNet-C [Download](https://zenodo.org/record/2235448#.Yj2RO_co_mF)
-+ [Supplementary](https://drive.qin.ee/api/raw/?path=/cv/cvpr2022/03679-supp-1.pdf)
 
 For questions regarding the code, please contact wang@qin.ee .
