@@ -4,6 +4,7 @@ import json
 import math
 import os
 import warnings
+import gdown
 from collections import OrderedDict
 from pathlib import Path
 from typing import Dict, Optional, Union
@@ -70,6 +71,14 @@ def rm_substr_from_state_dict(state_dict, substr):
     return new_state_dict
 
 
+def download_gdrive_new(gdrive_id, fname_save):
+    """Download checkpoints with gdown, see https://github.com/wkentaro/gdown."""
+
+    if isinstance(fname_save, Path):
+        fname_save = str(fname_save)
+    print(f'Downloading {fname_save} (gdrive_id={gdrive_id}).')
+    gdown.download(id=gdrive_id, output=fname_save)
+
 def add_substr_to_state_dict(state_dict, substr):
     new_state_dict = OrderedDict()
     for k, v in state_dict.items():
@@ -119,7 +128,7 @@ def load_model(model_name: str,
         if not os.path.exists(model_dir_):
             os.makedirs(model_dir_)
         if not os.path.isfile(model_path):
-            download_gdrive(models[model_name]['gdrive_id'], model_path)
+            download_gdrive_new(models[model_name]['gdrive_id'], model_path)
         checkpoint = torch.load(model_path, map_location=torch.device('cpu'))
 
         if 'Kireev2021Effectiveness' in model_name or model_name == 'Andriushchenko2020Understanding':
@@ -150,7 +159,7 @@ def load_model(model_name: str,
             os.makedirs(model_dir_)
         for i, gid in enumerate(models[model_name]['gdrive_id']):
             if not os.path.isfile('{}_m{}.pt'.format(model_path, i)):
-                download_gdrive(gid, '{}_m{}.pt'.format(model_path, i))
+                download_gdrive_new(gid, '{}_m{}.pt'.format(model_path, i))
             checkpoint = torch.load('{}_m{}.pt'.format(model_path, i),
                                     map_location=torch.device('cpu'))
             try:
